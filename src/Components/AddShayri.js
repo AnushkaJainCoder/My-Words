@@ -1,9 +1,10 @@
 import { useState } from "react";
+import './styles.css';
 
 export default function AddShayri({addShayri}){
 
     const [newShayri, SetNewShayri] = useState("");
-
+    
     function handleSubmit(e){
         e.preventDefault();
         if(newShayri.trim()){
@@ -12,13 +13,22 @@ export default function AddShayri({addShayri}){
         }
     }
     return (
-        <form onSubmit={handleSubmit}>
-            <input type = "text"
-             onChange={(e) => SetNewShayri(e.target.value)} 
-             value={newShayri} 
-             placeholder="Enter new shayri" 
-             className="textBox"/>
-            <button type="submit" >Add Your Words</button>
-        </form>
+        <div className="form-container">
+             <form onSubmit={handleSubmit}  style={{width: 50}} >
+                {/* <input type = "text"
+                onChange={(e) => SetNewShayri(e.target.value)} 
+                value={newShayri} 
+                placeholder="Enter new shayri" 
+                className="textBox"/> */}
+                <textarea type = "text"
+                onChange={(e) => SetNewShayri(e.target.value)} 
+                value={newShayri} 
+                placeholder="Enter new shayri" 
+                className="textBox"></textarea>
+                <br />
+                <button type="submit" className="subm">Add </button>
+            </form>
+        </div>
+       
     )
 }

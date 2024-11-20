@@ -6,6 +6,7 @@ import './styles.css'
 
 export default function ShayriList(){
 
+    const [isBlurred, setBlur] = useState(false);
     const [showForm, setShowForm] = useState(false)
     const  [shayris, setShayris] = useState([
         "Muskan Ban Jata Hai Koi,Dil Ki Dhadkan Ban Jata Hai Koi,Kaise Jiye Ek Pal Bhi Un Ke Bin,Jab Zindgi Jeene Ki Wajah Ban Jata Hai Koi,",
@@ -26,22 +27,17 @@ export default function ShayriList(){
             
             <div>
             {!showForm &&(
-                    <button onClick={() => setShowForm(true)} className="btn">
+                    <button onClick={() => {setShowForm(true); setBlur(true)}} className="btn">
                         Add
                     </button>
                 )}
-            {showForm &&  <AddShayri addShayri = {addShayri} />}
-            {showForm && (
-                <button onClick={() => setShowForm(false)} className="btn">
-                    Cancel
-                </button>)
-            }
+            
         
                 {/* <div> hello</div> */}
             </div>    
         </nav> 
 
-         <div className="flexbox">
+         <div className={`flexbox ${isBlurred ? 'blur-background': ''}`}>
             {shayris.map((shayri, index)=> {
                return (
                  <ShayriItem key={index} shayri={shayri} />
@@ -49,7 +45,15 @@ export default function ShayriList(){
             )    })}
             
         </div>
-
+        
+        <div>
+        {showForm &&  <AddShayri addShayri = {addShayri} />}
+            {showForm && (
+                <button onClick={() => {setShowForm(false); setBlur(false)}} className="cbtn">
+                    Cancel
+                </button>)
+            }
+        </div>
        
         </>
 
