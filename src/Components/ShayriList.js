@@ -9,9 +9,27 @@ export default function ShayriList(){
     const [isBlurred, setBlur] = useState(false);
     const [showForm, setShowForm] = useState(false)
     const  [shayris, setShayris] = useState([
-        "Muskan Ban Jata Hai Koi,Dil Ki Dhadkan Ban Jata Hai Koi,Kaise Jiye Ek Pal Bhi Un Ke Bin,Jab Zindgi Jeene Ki Wajah Ban Jata Hai Koi,",
-        "Heartbeats, the hum of your name,The sweetest song of my life.",
-        "love the way you are!"
+        "Koi tumhari zindagi banata hai, Koi tumhari zindagi bigadta hai, Jo dono karta hai, wo hota hai Dost,",
+        "Ek Tere Siwa Hum Kisi Aur Ke Kaise Ho Sakte Hai, Tu Khud Hi Soch Ke Bata Tere Jaisa Aur Koi Hai Kiya. ",
+        "lTum waqt ke saath dhalne ke liye nahi, Tum waqt ko badalne ke liye bane ho. ",
+   
+        "Koi tumhari zindagi banata hai, Koi tumhari zindagi bigadta hai, Jo dono karta hai, wo hota hai Dost,",
+        "Ek Tere Siwa Hum Kisi Aur Ke Kaise Ho Sakte Hai, Tu Khud Hi Soch Ke Bata Tere Jaisa Aur Koi Hai Kiya. ",
+        "lTum waqt ke saath dhalne ke liye nahi, Tum waqt ko badalne ke liye bane ho. ",
+   
+        // "Koi tumhari zindagi banata hai, Koi tumhari zindagi bigadta hai, Jo dono karta hai, wo hota hai Dost,",
+        // "Ek Tere Siwa Hum Kisi Aur Ke Kaise Ho Sakte Hai, Tu Khud Hi Soch Ke Bata Tere Jaisa Aur Koi Hai Kiya. ",
+        // "lTum waqt ke saath dhalne ke liye nahi, Tum waqt ko badalne ke liye bane ho. ",
+        
+        // "Koi tumhari zindagi banata hai, Koi tumhari zindagi bigadta hai, Jo dono karta hai, wo hota hai Dost,",
+        // "Ek Tere Siwa Hum Kisi Aur Ke Kaise Ho Sakte Hai, Tu Khud Hi Soch Ke Bata Tere Jaisa Aur Koi Hai Kiya. ",
+        // "lTum waqt ke saath dhalne ke liye nahi, Tum waqt ko badalne ke liye bane ho. ",
+        
+        // "Koi tumhari zindagi banata hai, Koi tumhari zindagi bigadta hai, Jo dono karta hai, wo hota hai Dost,",
+        // "Ek Tere Siwa Hum Kisi Aur Ke Kaise Ho Sakte Hai, Tu Khud Hi Soch Ke Bata Tere Jaisa Aur Koi Hai Kiya. ",
+        // "lTum waqt ke saath dhalne ke liye nahi, Tum waqt ko badalne ke liye bane ho. ",
+
+   
     ]);
 
 
