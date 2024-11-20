@@ -20,12 +20,14 @@ export default function ShayriList(){
     }
     return (
         <> 
-        <div style={{color: 'red', fontSize: 30, fontStyle: 'italic'}}>
+        
+        <nav style={{display: "flex", justifyContent: "space-between"}}>
+        <div style={{color: 'red', fontSize: 30, fontStyle: 'italic',  margin: 20}}>
                 My Words
         </div>
-        <nav>
             
             <div>
+
             {!showForm &&(
                     <button onClick={() => {setShowForm(true); setBlur(true)}} className="btn">
                         Add

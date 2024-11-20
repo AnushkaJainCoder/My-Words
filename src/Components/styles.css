@@ -53,14 +53,14 @@ body{
 
 
 .btn{
-    height: 100%;
+    height: auto;
     width: auto;
     margin-bottom: 20px;
     display: block;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-right: 10px;
     /* border-radius: 50%; */
-    background-color: rgb(195, 63, 49);
+    background-color: rgb(131, 100, 93);
     color: rgb(249, 247, 246);
     border-radius: 50% ;
     padding: 10px;
