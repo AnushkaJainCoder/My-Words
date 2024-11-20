@@ -9,8 +9,8 @@ export default function ShayriList(){
     const [isBlurred, setBlur] = useState(false);
     const [showForm, setShowForm] = useState(false)
     const  [shayris, setShayris] = useState([
-        "Koi tumhari zindagi banata hai, Koi tumhari zindagi bigadta hai, Jo dono karta hai, wo hota hai Dost,",
-        "Ek Tere Siwa Hum Kisi Aur Ke Kaise Ho Sakte Hai, Tu Khud Hi Soch Ke Bata Tere Jaisa Aur Koi Hai Kiya. ",
+        "Mana ki tum sabsa alg ho, \n Alag hona koi gunah to nhi, \n hota to tum hmara bich na hota, alg hona to ak bat h, chlo tuma m kuch to bat h......",
+        "Raste alag h par manzil vhi h, \njism alag h par jan ak hi ha..  ",
         "lTum waqt ke saath dhalne ke liye nahi, Tum waqt ko badalne ke liye bane ho. ",
    
         "Koi tumhari zindagi banata hai, Koi tumhari zindagi bigadta hai, Jo dono karta hai, wo hota hai Dost,",
