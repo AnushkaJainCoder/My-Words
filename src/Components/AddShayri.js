@@ -16,7 +16,8 @@ export default function AddShayri({addShayri}){
             <input type = "text"
              onChange={(e) => SetNewShayri(e.target.value)} 
              value={newShayri} 
-             placeholder="Enter new shayri" />
+             placeholder="Enter new shayri" 
+             className="textBox"/>
             <button type="submit" >Add Your Words</button>
         </form>
     )

@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import ShayriList from './Components/ShayriList';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AddShayri from './Components/AddShayri';
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <Router>
           <Routes>
           <Route path='/' element = {ShayriList} />
-          {/* <Route path='/add' element = {AddShayri} /> */}
+          <Route path='/add' element = {AddShayri} />
             
           </Routes>
       </Router>

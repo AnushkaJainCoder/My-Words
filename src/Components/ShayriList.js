@@ -1,6 +1,7 @@
 import { useState } from "react"
 import ShayriItem from "./ShayariItem";
 import AddShayri from "./AddShayri";
+import './styles.css'
 
 
 export default function ShayriList(){
@@ -17,26 +18,36 @@ export default function ShayriList(){
         setShayris([...shayris,newShayri])
     }
     return (
-        <div>
+        <> 
+        <nav>
+            <div>
+            {!showForm &&(
+                    <button onClick={() => setShowForm(true)} className="btn">
+                        Add
+                    </button>
+                )}
+            {showForm &&  <AddShayri addShayri = {addShayri} />}
+            {showForm && (
+                <button onClick={() => setShowForm(false)} className="btn">
+                    Cancel
+                </button>)
+            }
+        
+                {/* <div> hello</div> */}
+            </div>    
+        </nav>      
+         <div className="flexbox">
             {shayris.map((shayri, index)=> {
                return (
                  <ShayriItem key={index} shayri={shayri} />
             
             )    })}
-            {!showForm &&(
-                <button onClick={() => setShowForm(true)}>
-                    Add
-                </button>
-            )}
-           
-            {showForm &&  <AddShayri addShayri = {addShayri} />}
-            {showForm && (
-                <button onClick={() => setShowForm(false)}>
-                    Cancel
-                </button>)
-            }
-           
-            {/* <div> hello</div> */}
+            
         </div>
+
+       
+        </>
+
+
     );
 };
