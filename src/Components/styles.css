@@ -59,15 +59,21 @@ body{
     display: block;
     margin-top: 20px;
     margin-left: 10px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    background-color: rgb(195, 63, 49);
+    color: rgb(249, 247, 246);
+    border-radius: 50% ;
+    padding: 10px;
 }
 
 .cbtn{
     height: 4%;
     width: 70px;
-    /* padding: 4px; */
+    
     margin-right: 18%;
-    /* border-radius: 50%; */
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 
@@ -98,6 +104,10 @@ body{
 .subm{
     /* height: 4%; */
     width: 70px;
+    background-color: rgb(0, 255, 21);
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: 5px;
     /* padding: 4px; */
     /* font-size: 0.6rem; */
 
