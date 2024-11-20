@@ -19,7 +19,11 @@ export default function ShayriList(){
     }
     return (
         <> 
+        <div style={{color: 'red', fontSize: 30, fontStyle: 'italic'}}>
+                My Words
+        </div>
         <nav>
+            
             <div>
             {!showForm &&(
                     <button onClick={() => setShowForm(true)} className="btn">
@@ -35,7 +39,8 @@ export default function ShayriList(){
         
                 {/* <div> hello</div> */}
             </div>    
-        </nav>      
+        </nav> 
+
          <div className="flexbox">
             {shayris.map((shayri, index)=> {
                return (

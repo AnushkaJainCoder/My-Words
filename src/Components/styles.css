@@ -5,7 +5,8 @@ body{
 
 .shayri-item{
     width: 20%;
-    background-color: #d9dede;
+    background-color: #c9cbcb;
+    
     border: 1px solid black;
     border-radius: 8px;
     padding: 16px;
@@ -20,11 +21,12 @@ body{
 }
 
 .shayri-item p{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     color: #8d8b8b;
     margin: 0;
     line-height: 1.5;
     font-style: italic;
+    padding: 10px;
 }
 
 .flexbox{
@@ -35,6 +37,7 @@ body{
     gap: 20px;
     max-width: 100%;
     margin-left: 20px;
+    /* padding: ; */
    
 
 }
